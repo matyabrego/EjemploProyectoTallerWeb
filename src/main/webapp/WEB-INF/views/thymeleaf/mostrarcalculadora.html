@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/calcular}" method="get">
+    Pimer numero: <input type="number" name="numero1">
+    Segundo numero: <input type="number" name="numero2">
+
+    <select name="operacion">
+        <option value="suma">Suma</option>
+        <option value="resta">Resta</option>
+        <option value="multiplicacion">Multiplicacion</option>
+        <option value="division">Division</option>
+    </select>
+
+    <button type="submit">Enviar</button>
+</form>
+</body>
+</html>
