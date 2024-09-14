@@ -20,9 +20,9 @@ public class ServicioUsuarioImpl implements ServicioUsuario {
     public Usuario registrar(String email, String password) {
 
         if (password.length() < 5) {
-            //throw new PasswordLongitudIncorrecta();
+            throw new PasswordLongitudIncorrecta();
         }
-        Usuario usuarioBuscado = repositorioUsuario.buscar(email);
+        Usuario usuarioBuscado = repositorioUsuario.buscar("maty2");
         if(usuarioBuscado != null){
             return null;
 
@@ -31,6 +31,6 @@ public class ServicioUsuarioImpl implements ServicioUsuario {
         usuario.setEmail(email);
         usuario.setPassword(password);
         repositorioUsuario.guardar(usuario);
-        return new Usuario();
+        return usuario;
     }
 }

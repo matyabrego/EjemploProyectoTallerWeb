@@ -6,10 +6,13 @@ import com.tallerwebi.dominio.excepcion.UsuarioExistente;
 import org.junit.jupiter.api.Test;
 import org.springframework.web.servlet.ModelAndView;
 
+import static org.hamcrest.Matchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
+
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
+
 
 
 public class ControladorRegistroTest {

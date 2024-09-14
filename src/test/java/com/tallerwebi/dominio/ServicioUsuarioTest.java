@@ -3,9 +3,9 @@ package com.tallerwebi.dominio;
 import com.tallerwebi.dominio.excepcion.PasswordLongitudIncorrecta;
 import com.tallerwebi.infraestructura.RepositorioUsuario1Impl;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 
 import static org.hamcrest.MatcherAssert.assertThat;
+
 import static org.hamcrest.Matchers.notNullValue;
 import static org.hamcrest.Matchers.nullValue;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -52,7 +52,7 @@ public class ServicioUsuarioTest {
     }
 
     private void entoncesElRegistroFalla(Usuario usuarioCreado) {
-        assertThat(usuarioCreado, nullValue());
+        assertThat(usuarioCreado,nullValue());
     }
 
     @Test

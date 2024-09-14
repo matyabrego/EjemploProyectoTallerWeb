@@ -5,9 +5,9 @@
     <title>Resultado</title>
 </head>
 <body>
+<p th:if="${error != null}" class="alert alert-danger" th:text=" 'Error ' + ${error}"></p>
 
-<p th:text="'Resultado de ' + ${operacion} + ' ' + ${var1} + ' y ' + ${var2} + ' es ' + ${resul}"></p>
-
+<p  th:if="${error == null}" th:text="'Resultado de ' + ${operacion} + ' ' + ${var1} + ' y ' + ${var2} + ' es ' + ${resul}"></p>
 
 </body>
 </html>

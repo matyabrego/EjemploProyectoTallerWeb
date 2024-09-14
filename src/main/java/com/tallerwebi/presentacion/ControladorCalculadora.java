@@ -38,7 +38,7 @@ public class ControladorCalculadora {
 
             String error = e.getMessage();
             modelo.put("error", error);
-            return new ModelAndView("errorcalculadora", modelo);
+            return new ModelAndView("resultadocalculadora", modelo);
         }
 
         modelo.put("resul", resultado);
